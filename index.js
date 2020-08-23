@@ -39,7 +39,7 @@ traverse(config).forEach(function (x) {
     const separationToken = '\n\n<!-- nocomment -->\n'
 
     const [codePart, docPart = ''] = oldDocContent.split(separationToken)
-    const newDocContent = `[${this.key}](/${relativePathDeclared})
+    const newDocContent = `**[${relativePathDeclared}](/${relativePathDeclared}#readme)**
 
 \`\`\`${type}\n${sourceContent}\n\`\`\`${separationToken}${docPart}`
 

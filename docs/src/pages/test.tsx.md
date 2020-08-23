@@ -1,4 +1,4 @@
-[test.tsx](/src/pages/test.tsx)
+**[src/pages/test.tsx](/src/pages/test.tsx#readme)**
 
 ```tsx
 const Foo = () => <div>Bar New</div>
