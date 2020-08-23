@@ -1,0 +1,5 @@
+src:
+  pages:
+    test.tsx:
+  util.js:
+  python.txt: py

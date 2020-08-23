@@ -1,11 +1,17 @@
 {
-  "name": "nocomment",
-  "version": "0.1.0",
+  "name": "@verekia/nocomment",
+  "version": "0.2.0",
   "main": "index.js",
+  "bin": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/verekia/nocomment.git"
   },
   "author": "@verekia",
-  "homepage": "https://github.com/verekia/nocomment#readme"
+  "homepage": "https://github.com/verekia/nocomment#readme",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "js-yaml": "^3.14.0",
+    "traverse": "^0.6.6"
+  }
 }
