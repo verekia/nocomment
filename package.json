@@ -1,0 +1,11 @@
+{
+  "name": "nocomment",
+  "version": "0.1.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/verekia/nocomment.git"
+  },
+  "author": "@verekia",
+  "homepage": "https://github.com/verekia/nocomment#readme"
+}
