@@ -1,4 +1,4 @@
-#!/usr/bin/env
+#! /usr/bin/env node
 
 const fs = require('fs')
 
@@ -33,7 +33,7 @@ traverse(config).forEach(function (x) {
       throw Error(`File ${sourcePath} is declared in nocomment.yaml but does not exist`)
     }
     const sourceContent = fs.readFileSync(sourcePath, 'utf8')
-    const oldDocContent = fs.readFileSync(docsPath, 'utf8')
+    const oldDocContent = fs.existsSync(docsPath) ? fs.readFileSync(docsPath, 'utf8') : ''
     const type = typeof this.node === 'string' ? this.node : this.key.split('.').pop()
 
     const separationToken = '\n\n<!-- nocomment -->\n'
@@ -47,4 +47,3 @@ traverse(config).forEach(function (x) {
     console.log(`Wrote ${docsPath}`)
   }
 })
-

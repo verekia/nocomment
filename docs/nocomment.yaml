@@ -3,3 +3,4 @@ src:
     test.tsx:
   util.js:
   python.txt: py
+  foo.rb:
